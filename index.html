@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #201c29;
+            color: white;
+        }
+        .hero {
+            position: relative;
+            background-image: url('image/fav.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            color: white;
+            text-align: center;
+            margin-top: 56px; /* Offset for the fixed navbar */
+        }
+        .hero .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 100%;
+            align-content: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .buttons .btn {
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        /* Footer Styles */
+        .footer {
+            background-color: #201c29; /* Match your design */
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #007bff; /* Match your design */
+        }
+        .footer .whatsapp-icon {
+            font-size: 24px;
+            color: #25D366; /* WhatsApp green color */
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #007bff; /* Match your design */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand text-info" href="#">E-Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="overlay" data-aos="fade-up" data-aos-duration="1500">
+            <p>Balance</p>
+            <p>≈ $4870.03316</p>
+            <div class="buttons">
+                <a data-mdb-ripple-init class="btn btn-outline-info btn-sm" href="#!" role="button">Deposit</a>
+                <a data-mdb-ripple-init class="btn btn-outline-info btn-sm" href="#!" role="button">Withdraw</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md col-lg-4 color text-light cool" data-aos="fade-up" data-aos-duration="1500">
+                <div class="shadow p-3">
+                    <img src="image/money1.jpg" alt="placeholder" class="img-fluid rounded-3" style="width: 100%; height: auto; max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Team</h5>
+                        <p>Spread the word about E-Bank! Our dedicated team is working tirelessly to enhance financial independence worldwide. Invite your friends to join us in making a global impact!</p>
+                        <a data-mdb-ripple-init class="btn btn-outline-info btn-sm" href="#!" role="button">More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md col-lg-4 color text-light cool" data-aos="fade-up" data-aos-duration="1500">
+                <div class="shadow p-3">
+                    <video class="img-fluid rounded-3" style="width: 100%; height: auto; max-height: 200px;" controls>
+                        <source src="video/hero.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body">
+                        <h5 class="card-title">🚀🚀🚀🚀</h5>
+                        <p>Experience the power of having cash💰💵 in hand with E-Bank—empower your financial freedom today!</p>
+                        <a data-mdb-ripple-init class="btn btn-outline-info btn-sm" href="#!" role="button">More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md col-lg-4 color text-light cool" data-aos="fade-up" data-aos-duration="1500">
+                <div class="shadow p-3">
+                    <img src="image/auto.jpg" alt="placeholder" class="img-fluid rounded-3" style="width: 100%; height: auto; max-height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Share</h5>
+                        <p>Don’t be selfish—share E-Bank with your friends! Help them boost their income while you grow yours. Tag a friend and spread the wealth!</p>
+                        <a data-mdb-ripple-init class="btn btn-outline-info btn-sm" href="#!" role="button">More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 E-Bank. All rights reserved.</p>
+            <a href="https://wa.me/yourphonenumber" class="whatsapp-icon" target="_blank">
+                <i class="fab fa-whatsapp"></i> <!-- Font Awesome WhatsApp icon -->
+            </a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">
+        &uarr;
+    </button>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
